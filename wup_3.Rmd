@@ -42,11 +42,22 @@ According to the data chart, people who drink more are   the ones in the back se
 favstats(alcohol~Seat,data=davisdata)
 ```
 
-In the table above, it shows that there are more people   sitting in the middle row then any other row, meaning   that they will consume more alchohol than any other   group.    
+In the table above, it shows that there are more people   sitting in the middle row then any other row, meaning   that they will consume more alcohol than any other   group.    
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+the low p value shows that there is a problem, and is in   need for a t test.  
 
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+Seeing all the groups, each group being the Front-Back,   Middle-Back, and the Middle Front, are different from one   another.  
 
 ## Conclusions
 
