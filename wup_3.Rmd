@@ -36,6 +36,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 According to the data chart, people who drink more are   the ones in the back seat, while people in the front   will drink less, which is logical since its illegal to   drink and drive.  
+
 ## Numerical Summarys 
 ```{r}
 favstats(momheight~Sex,data=ucdavis1)
