@@ -39,9 +39,10 @@ According to the data chart, people who drink more are   the ones in the back se
 
 ## Numerical Summarys 
 ```{r}
-favstats(momheight~Sex,data=ucdavis1)
+favstats(alcohol~Seat,data=davisdata)
 ```
 
+In the table above, it shows that there are more people   sitting in the middle row then any other row, meaning   that they will consume more alchohol than any other   group.    
 
 ## Inferential Tests
 
